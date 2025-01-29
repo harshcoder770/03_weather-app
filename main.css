@@ -1,0 +1,324 @@
+body{
+ 
+  background-color: #ede0d4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading h1 {
+  font-size: 75px;
+}
+.heading h4 {
+  font-size: 20px;
+}
+.input-box-container {
+  height: 45px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+.input-box {
+  border: 1px solid black;
+  width: 395px;
+  height: 100%;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.input-box input {
+  width: 350px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  border: none;
+  background-color: blueviolet;
+}
+
+.data {
+  margin-top: 150px;
+}
+.head {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head h1 {
+  padding-left: 50px;
+  font-family: "Roboto Slab", serif;
+}
+.data h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.response1 {
+  max-width: 550px;
+  height: 200px;
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+  box-shadow: 0px 0px 5px 0px #342828;
+}
+.response1 h1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #022954;
+}
+.response1 h3 {
+  font-size: 20px;
+  justify-self: flex-start;
+  font-family: "Lexend Giga", serif;
+  padding-top: 8px;
+}
+.response2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+.first {
+  margin-right: 125px;
+  box-shadow: 0px 0px 5px 0px #342828;
+  padding-inline: 75px;
+  padding-block: 25px;
+}
+.second {
+  box-shadow: 0px 0px 5px 0px #342828;
+  padding-inline: 75px;
+  padding-block: 25px;
+}
+.first h1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #022954;
+}
+.second h1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #022954;
+}
+.first h3 {
+  font-size: 20px;
+  justify-self: flex-start;
+  font-family: "Lexend Giga", serif;
+  padding-top: 8px;
+}
+.second h3 {
+  font-size: 20px;
+  justify-self: flex-start;
+  font-family: "Lexend Giga", serif;
+  padding-top: 8px;
+}
+
+.none {
+  display: none;
+}
+
+
+.img {
+  font-size: 125px;
+  position: fixed;
+  top: 8px;
+  left: 23px;
+}
+.popup-msg {
+  font-size: 25px;
+  display: inline-block;
+  margin-top: 75px;
+  margin-left: 200px;
+}
+
+.close-icon {
+  position: absolute;
+  right: 33px;
+  top: 20px;
+  font-size: large;
+  cursor: pointer;
+}
+.ok-btn {
+  display: block;
+  position: fixed;
+  bottom: 63px;
+  left: 262px;
+  width: 200px;
+  height: 50px;
+  font-size: 33px;
+  border-radius: 15px;
+}
+.popup {
+  max-width: 690px;
+  height: 320px;
+  border-radius: 41px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background-color: #90e0ef;
+  transform: scale(0);
+  transition: all 0.3s cubic-bezier(0.64, 0.31, 0.32, 1.16);
+}
+
+.popup.open {
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.64, 0.31, 0.32, 1.16);
+}
+
+@media (max-width: 450px) {
+  .heading {
+    margin-top: 100px;
+  }
+  .heading h1 {
+    font-size: 50px;
+  }
+  .heading h4 {
+    font-size: 18px;
+  }
+  .input-box {
+    width: 275px;
+  }
+  .input-box input {
+    width: 230px;
+  }
+
+  .data {
+    margin-top: 100px;
+  }
+  .head {
+    text-align: center;
+    font-size: 30px;
+  }
+  .head h1 {
+    padding-left: 20px;
+    font-family: "Roboto Slab", serif;
+  }
+  .data h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .response1 {
+    max-width: 300px;
+  }
+  .response1 h1 {
+    font-size: 30px;
+  }
+  .response1 h3 {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .response2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    flex-direction: column;
+    gap: 75px;
+    margin-bottom: 100px;
+    margin: auto;
+    max-width: 300px;
+    margin-bottom: 150px;
+  }
+  .first {
+    margin-right: 0;
+    margin-top: 75px;
+    padding: 30px;
+
+    padding-block: 25px;
+  }
+  .second {
+    margin-right: 0;
+
+    padding: 30px;
+
+    padding-block: 25px;
+  }
+  .first h1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #022954;
+  }
+  .second h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #022954;
+  }
+  .first h3 {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .second h3 {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .img {
+    font-size: 45px;
+    top: 27px;
+    right: -20px;
+  }
+  .popup-msg {
+    font-size: 18px;
+    word-wrap: break-word;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+
+  .close-icon {
+    right: 30px;
+    top: 19px;
+    font-size: large;
+    cursor: pointer;
+  }
+  .ok-btn {
+    bottom: 45px;
+    left: 71px;
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .popup {
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.64, 0.31, 0.32, 1.16);
+  }
+
+  .popup.open {
+    transform: scale(1);
+    max-width: 300px;
+    height: 230px;
+    margin-top: 200px;
+    border-radius: 41px;
+   
+    position: absolute;
+
+    transition: all 0.3s cubic-bezier(0.64, 0.31, 0.32, 1.16);
+  }
+}
